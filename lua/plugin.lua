@@ -86,7 +86,7 @@ return require('packer').startup(function()
   use 'wfxr/minimap.vim'
 
   --satellite
-  use 'lewis6991/satellite.nvim'
+  -- use 'lewis6991/satellite.nvim'
 
   -- gruvbox
   use {
@@ -105,4 +105,12 @@ return require('packer').startup(function()
 
   -- vim-surround
   use 'tpope/vim-surround'
+
+  -- fzf.vim
+  use { 
+    'junegunn/fzf',
+    'junegunn/fzf.vim'
+  }
 end)
+
+
