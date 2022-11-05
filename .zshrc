@@ -126,7 +126,10 @@ eval "$(starship init zsh)"
 # emulate sh -c 'source ~/.profile'
 emulate sh -c ". ~/.luaver/luaver"
 emulate sh -c ". ~/.luaver/completions/luaver.bash"
-emulate sh -c "luaver use 5.3.1"
+emulate sh -c "luaver set-default 5.3.1"
+emulate sh -c "luaver set-default-luarocks 3.5.0"
+# emulate sh -c "luaver use 5.3.1"
+# emulate sh -c "luaver use-luarocks 3.5.0"
 
 # ============== fzf ================
 

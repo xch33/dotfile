@@ -38,6 +38,7 @@ return require('packer').startup(function()
 
    -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
+  use 'hrsh7th/cmp-nvim-lua'
   use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
   use 'hrsh7th/cmp-path'     -- { name = 'path' }
   use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
@@ -86,7 +87,10 @@ return require('packer').startup(function()
   use 'wfxr/minimap.vim'
 
   --satellite
-  -- use 'lewis6991/satellite.nvim'
+  use {
+    'lewis6991/satellite.nvim',
+  }
+  use 'dstein64/nvim-scrollview'
 
   -- gruvbox
   use {
@@ -111,6 +115,22 @@ return require('packer').startup(function()
     'junegunn/fzf',
     'junegunn/fzf.vim'
   }
+
+  -- nlsp-settings
+  use 'tamago324/nlsp-settings.nvim'
+
+  -- lsp-format
+  use "lukas-reineke/lsp-format.nvim"
+
+  -- easy-align
+  use 'junegunn/vim-easy-align'
+
+  -- blankline
+  use "lukas-reineke/indent-blankline.nvim"
+
+  --lspsaga
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+  })
 end)
-
-

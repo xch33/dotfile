@@ -62,7 +62,7 @@ vim.o.timeoutlen = 1000
 vim.o.splitbelow = true
 vim.o.splitright = true
 -- 自动补全不自动选中
--- vim.g.completeopt = "menu,menuone,noselect,noinsert"
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- 样式
 -- vim.o.background = "dark"
 -- vim.o.termguicolors = true
@@ -77,6 +77,8 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 2
+-- 自动缩进
+vim.g.autoindent = true
 -- reopen file
 vim.cmd [[
   if has("autocmd")
